@@ -274,3 +274,12 @@ body {
        overflow:hidden;
        border-radius:10px;
       }
+
+
+      #bunnyimage img {
+        width:30px;
+        height: auto;
+        position: fixed;
+        bottom: 0px;
+        left: 10px;
+      }
