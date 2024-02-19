@@ -8,7 +8,7 @@ body {
     position:absolute;
     width:300px;
     height:300px;
-    top:40%;
+    top:850px;
     left:15%;
     transform: translate(-50%,-50%);
 
@@ -17,6 +17,7 @@ body {
     position:absolute;
      width:300px;
      height:auto;
+     margin-top:-510px;
    }
 
 img {
@@ -30,7 +31,7 @@ img {
     background-color: blue;
     width: 15px;
     height:15px;
-    top:50%;
+    top:420px;;
     left:17%;
     border-radius:50%;
     cursor: pointer;
@@ -39,7 +40,7 @@ img {
   h2 {
     position:absolute;
     margin-left:4%;
-    margin-top:19.5%;
+    margin-top:-580px;
     font-size:4vw;
     text-align: center;
     font-family:"Nothing You Could Do";
@@ -48,15 +49,17 @@ img {
   }
 
 
- /* .back1 {
+ .back1 {
   height:500px;
   width:400px;
   position:absolute;
-  margin-left:415px;
-  margin-top:17%;
+  margin-left:560px;
+  margin-top:-600px;
   background-color: White;
   transform:rotate(-20deg);
   border-radius:20px;
+  filter: drop-shadow(grey 0.4rem 0.4rem 20px);
+
 }
 
 #title {
@@ -68,7 +71,7 @@ img {
 #paragraph {
   font-family:"Nothing You Could Do";
   font-size: 12px;
-} */
+}
 
 .hair-button {
   position:absolute;
@@ -76,41 +79,42 @@ img {
       background-color: blue;
     width: 15px;
     height:15px;
-    top:45%;
+    top:390px;
     left:13%;
       border-radius:50%;
       cursor: pointer;
 }
 
 
-/* .back2 {
+.back2 {
   z-index:0;
   height:500px;
   width:400px;
   position:absolute;
-  margin-left:850px;
-  margin-top:17%;
+  margin-left:1000px;
+  margin-top:-600px;
   background-color:white;
   transform:rotate(20deg);
   border-radius:20px;
+  filter: drop-shadow(grey 0.4rem 0.4rem 20px);
+
 }
 
 .container {
-  z-index:1;
+  z-index:2;
   position:absolute;
   padding: 5px;
   margin: 5px 0;
   display: grid;
-  grid-template-rows: 300px 35px 100px;
+  grid-template-rows: 250px 30px 100px;
   width:300px;
-  margin-left:890px;
-  margin-top:230px;
+  margin-left:1050px;
+  margin-top:-560px;
   transform:rotate(20deg);
 
+}
 
-} */
-
-/* .top {
+.top {
   font-family:"Nothing You Could Do";
 
 }
@@ -128,20 +132,21 @@ img {
 
 section {
   height: 100px;
-  line-height: 100px;
-} */
+  line-height: 25px;
+}
 
 
-/* .container2 {
+
+.container2 {
   /* z-index:1; */
-  /* position:absolute;
+  position:absolute;
   padding: 5px;
   margin: 5px 0;
   display: grid;
-  grid-template-rows: 300px 35px 100px;
+  grid-template-rows: 250px 30px 100px;
   width:300px;
-  margin-left:459px;
-  margin-top:230px;
+  margin-left:600px;
+  margin-top:-560px;
   transform:rotate(-20deg);
 
 
@@ -161,30 +166,30 @@ section {
   font-family:"Nothing You Could Do";
 
 
-} */
+}
 
 .leg-button {
   position:absolute;
     z-index:2;
-      background-color: blue;
+    background-color: blue;
     width: 15px;
     height:15px;
-    top:63%;
+    top:500px;
     left:15%;
       border-radius:50%;
       cursor: pointer;
-} 
+}
 
-/* .container3 {
+.container3 {
   z-index:3;
   position:absolute;
   padding: 5px;
   margin: 5px 0;
   display: grid;
-  grid-template-rows: 300px 35px 100px;
+  grid-template-rows: 325px 30px 100px;
   width:300px;
-  margin-left:650px;
-  margin-top:150px;
+  margin-left:839px;
+  margin-top:-620px;
 
 
 }
@@ -210,9 +215,9 @@ section {
       height:500px;
       width:385px;
       position:absolute;
-      margin-top:125px;
+      margin-top:-650px;
       background-color:white;
-      margin-left:608px;
+      margin-left:800px;
       border-radius: 20px;
       filter: drop-shadow(grey 0.4rem 0.4rem 20px);
 
@@ -226,9 +231,8 @@ section {
      overflow:hidden;
      border-radius:10px;
   
-} */
+}
 
-Forward and Back Buttons
   a {
       text-decoration: none;
       display: inline-block;
@@ -252,4 +256,21 @@ Forward and Back Buttons
     .round {
       border-radius: 50%;
     }
-  
+
+    .leftimage {
+      z-index:3;
+     position:absolute;
+     width:310px;
+     height:auto;
+     overflow:hidden;
+     border-radius:10px;
+    }
+
+    .rightimg {
+      z-index:3;
+     position:absolute;
+     width:310px;
+     height:auto;
+     overflow:hidden;
+     border-radius:10px;
+    }
