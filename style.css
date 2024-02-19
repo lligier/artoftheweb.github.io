@@ -267,7 +267,7 @@ section {
     }
 
     .rightimg {
-      z-index:3;
+    z-index:3;
      position:absolute;
      width:310px;
      height:auto;
@@ -275,7 +275,7 @@ section {
      border-radius:10px;
     }
 
-  /* Lydia's Webring CSS  */
+    /* Lydia's Webring CSS  */
     #bunnyimage img {
       width:30px;
       height: auto;
