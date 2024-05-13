@@ -1,0 +1,134 @@
+body {
+  background-color: #1E1B27;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*padding-top:5%;*/
+  flex-direction: column;
+
+}
+.title {
+  font-family: "Sora", sans-serif;
+  font-style: normal;
+  font-size:4vw;
+  color: #F5F5F9;
+  text-align:center;
+  justify-content: center;
+  padding-bottom:2vh;
+  font-weight:700;
+
+}
+
+.subtitle {
+  font-family: "Archivo", sans-serif;  font-style: normal;
+  font-size:2vw;
+  color: #F5F5F9;
+  text-align:center;
+  justify-content: center;
+  width:50%;
+  padding-bottom:40px;
+
+}
+
+.container-wrapper {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#container {
+  background-color: white;
+  position:relative;
+  width: 40vw; 
+  height: 40vw;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: horizontal; 
+  padding-bottom:40px;
+}
+
+.exampleButton {
+  padding: 10px 20px;
+  font-size: 16px; 
+  background-color: #007bff;
+  color: #fff; 
+  border: none;
+  font-family: Sora, sans-serif;
+  font-weight:600;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.exampleButton:hover{
+  color:#000000;
+  background-color:#FFFFFF;
+  }
+
+.playButton {
+  padding: 10px 20px;
+  font-size: 16px; 
+  background-color: #007bff;
+  color: #fff; 
+  border: none;
+  font-family: Sora, sans-serif;
+  font-weight:600;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left:40px;
+}
+
+.playButton:hover{
+  color:#000000;
+  background-color:#FFFFFF;
+  }
+
+.legend {
+  display:flex;
+  flex-direction: row;
+  margin-top:30px;
+  justify-content: center;
+  align-items:center;
+  margin-bottom:25px;
+}
+
+.legendLeft {
+  display:flex;
+  flex-direction:row; 
+  margin-right:35px;
+}
+
+.legendRight{
+  display:flex;
+  flex-direction:row; 
+}
+
+.legendlow {
+  height:50px;
+  width:50px;
+  background-color:#2060CD;
+  border-radius:10px;
+  
+}
+
+.legendhigh {
+  height:50px;
+  width:50px;
+  background-color:#FBD47F;
+  border-radius:10px;
+}
+
+#legendStyle {
+  font-family: Sora,sans-serif;
+  color:white;
+  margin-left:10px;
+  margin-top:-0.02px;
+  font-weight:600;
+  
+}

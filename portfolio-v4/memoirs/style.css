@@ -1,0 +1,472 @@
+
+/* BACKGROUND */
+body {
+  background: #222;
+  color: #fff;
+  font-size: 18px;
+  padding-top: 2em;
+}
+
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-evenly;
+  text-align: center;
+  margin:2rem auto;
+}
+
+.note-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-evenly;
+  text-align: center;
+}
+
+.note-summary{
+    width: 700px;
+    height: auto;
+    background: whitesmoke;
+    color: black;
+    text-align: left;
+    line-height: 1.5em;
+    padding: 5px 16px 5px 16px;
+    border-radius: 10px;
+    font-family: DM Sans, sans-serif;
+}
+
+
+.buttons-content {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  text-align: center;
+  cursor:pointer;
+  margin-bottom:20px;
+}
+
+input {
+  outline: 0;
+  cursor: pointer;
+  border: 1px solid #babfc3;
+  padding: 7px 16px;
+  min-height: 36px;
+  min-width: 36px;
+  font-family: DM Sans, sans-serif;
+  color: #202223;
+  background: #ffffff;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 14px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 0px 0px;
+  margin-top:10px;
+
+}
+
+.hidden {
+	visibility: hidden;
+	display: none;
+}
+
+/* TITLE */
+/* GLOBAL STYLES */
+h1 {
+  font-family: monospace;
+  display: flex;
+}
+/* Typewriter Title */
+.typewriter {
+  color: #fff;
+  width: 340px;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; 
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .7s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 340px }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+
+/* BOOK #1*/
+
+.book-wrapper {
+  max-width: calc(100% / 4);
+  min-width: 10em;
+  padding-bottom:2em;
+}
+
+.book-notebook {
+  height: 250px;
+  width: 175px;
+  position: relative;
+  transition: .4s ease-in-out;
+  border-radius: 5px 15px 15px 5px;
+  
+  
+}
+.book-notebook:hover {
+    transform: rotateZ(-10deg);
+    .notebook-cover {
+		transform: rotateY(-50deg);
+		z-index: 999;
+    cursor:pointer;
+	}
+  }
+  
+
+.notebook-cover {
+  background: #cc4b48;
+  height: 250px;
+  width: 175px;
+  position: absolute;
+  border-radius: 5px 15px 15px 5px;
+  z-index: 10;
+  transition: .5s linear;
+  transform-style: preserve-3d;
+  transform-origin: left center 0px;
+  
+  
+}
+.notebook-cover:before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: calc(100% + 2px);
+    top: -1px;
+    z-index: 100;
+    border-radius: 2px;
+    right: 25px;
+    transition: 2s ease;
+    
+    
+  }
+  
+
+.notebook-page {
+  height: 100%;
+  width: 175px;
+  position: absolute;
+  background-color: #fbfae8;
+  z-index: 0;
+  border-radius: 5px 16px 16px 5px;
+  overflow: hidden;
+  
+  
+  
+}
+.squared {
+        background-image: linear-gradient(#e4e4e4 1px, transparent 1px), linear-gradient(90deg, #e4e4e4 1px, transparent 1px);
+    background-size: 10px 10px, 10px 10px, 2px 2px, 2px 2px;
+    
+
+    
+  }
+ 
+
+/* BOOK 2 */
+.book-wrapper1 {
+    max-width: calc(100% / 4);
+    min-width: 10em;
+  }
+
+  /* MAID IMAGE */
+  .imagestyle {
+    height:250px;
+    width:175px;
+    border-radius:5px 15px 15px 5px;
+  }
+
+  .book-notebook1 {
+    height: 250px;
+    width: 175px;
+    position: relative;
+    transition: .4s ease-in-out;
+    border-radius: 5px 15px 15px 5px;
+  }
+  
+  .book-notebook1:hover {
+    cursor:pointer;
+      transform: rotateZ(-10deg);
+      .notebook-cover1 {
+          transform: rotateY(-50deg);
+          z-index: 999;
+          box-shadow: 20px 10px 50px rgba(0,0,0,0.2);
+          
+      }
+    }
+    
+  .notebook-cover1 {
+    background: #cc4b48;
+    height: 250px;
+    width: 175px;
+    position: absolute;
+    border-radius: 5px 15px 15px 5px;
+    z-index: 10;
+    transition: .5s linear;
+    transform-style: preserve-3d;
+    transform-origin: left center 0px;
+
+  }
+
+  .notebook-cover1:before {
+      content: "";
+      position: absolute;
+      width: 10px;
+      height: calc(100% + 2px);
+      z-index: 100;
+      border-radius: 2px;
+      transition: 2s ease;
+    }
+    
+  
+  .notebook-page1 {
+    height: 100%;
+    width: 175px;
+    position: absolute;
+    background-color: #fbfae8;
+    z-index: 0;
+    border-radius: 5px 16px 16px 5px;
+    overflow: hidden;
+  }
+  
+  
+  .squared1 {
+          background-image: linear-gradient(#e4e4e4 1px, transparent 1px), linear-gradient(90deg, #e4e4e4 1px, transparent 1px);
+      background-size: 10px 10px, 10px 10px, 2px 2px, 2px 2px;
+    }
+
+    /* BOOK 3 */
+    .book-wrapper2 {
+        max-width: calc(100% / 4);
+        min-width: 10em;
+      }
+    
+      .book-notebook2 {
+        height: 250px;
+        width: 175px;
+        position: relative;
+        transition: .4s ease-in-out;
+        border-radius: 5px 15px 15px 5px;
+      }
+      
+      .book-notebook2:hover {
+        cursor:pointer;
+          transform: rotateZ(-10deg);
+          .notebook-cover2 {
+              transform: rotateY(-50deg);
+              z-index: 999;
+              box-shadow: 20px 10px 50px rgba(0,0,0,0.2);
+              
+          }
+        }
+        
+      .notebook-cover2 {
+        background: #cc4b48;
+        height: 250px;
+        width: 175px;
+        position: absolute;
+        border-radius: 5px 15px 15px 5px;
+        z-index: 10;
+        transition: .5s linear;
+        transform-style: preserve-3d;
+        transform-origin: left center 0px;
+    
+      }
+    
+      .notebook-cover2:before {
+          content: "";
+          position: absolute;
+          width: 10px;
+          height: calc(100% + 2px);
+          z-index: 100;
+          border-radius: 2px;
+          transition: 2s ease;
+        }
+        
+      
+      .notebook-page2 {
+        height: 100%;
+        width: 175px;
+        position: absolute;
+        background-color: #fbfae8;
+        z-index: 0;
+        border-radius: 5px 16px 16px 5px;
+        overflow: hidden;
+      }
+      
+      
+      .squared1 {
+              background-image: linear-gradient(#e4e4e4 1px, transparent 1px), linear-gradient(90deg, #e4e4e4 1px, transparent 1px);
+          background-size: 10px 10px, 10px 10px, 2px 2px, 2px 2px;
+        }
+
+        /* BOOK 4 */
+    .book-wrapper3 {
+        max-width: calc(100% / 4);
+        min-width: 10em;
+      }
+    
+      .book-notebook3 {
+        height: 250px;
+        width: 175px;
+        position: relative;
+        transition: .4s ease-in-out;
+        border-radius: 5px 15px 15px 5px;
+      }
+      
+      .book-notebook3:hover {
+        cursor:pointer;
+          transform: rotateZ(-10deg);
+          .notebook-cover3 {
+              transform: rotateY(-50deg);
+              z-index: 999;
+              box-shadow: 20px 10px 50px rgba(0,0,0,0.2);
+              
+          }
+        }
+        
+      .notebook-cover3 {
+        background: #cc4b48;
+        height: 250px;
+        width: 175px;
+        position: absolute;
+        border-radius: 5px 15px 15px 5px;
+        z-index: 10;
+        transition: .5s linear;
+        transform-style: preserve-3d;
+        transform-origin: left center 0px;
+    
+      }
+    
+      .notebook-cover3:before {
+          content: "";
+          position: absolute;
+          width: 10px;
+          height: calc(100% + 2px);
+          z-index: 100;
+          border-radius: 2px;
+          transition: 2s ease;
+        }
+        
+      
+      .notebook-page3 {
+        height: 100%;
+        width: 175px;
+        position: absolute;
+        background-color: #fbfae8;
+        z-index: 0;
+        border-radius: 5px 16px 16px 5px;
+        overflow: hidden;
+      }
+      
+      
+      .squared1 {
+              background-image: linear-gradient(#e4e4e4 1px, transparent 1px), linear-gradient(90deg, #e4e4e4 1px, transparent 1px);
+          background-size: 10px 10px, 10px 10px, 2px 2px, 2px 2px;
+        }
+
+
+        /* BOOK 5 */
+    .book-wrapper4 {
+        max-width: calc(100% / 4);
+        min-width: 10em;
+      }
+    
+      .book-notebook4 {
+        height: 250px;
+        width: 175px;
+        position: relative;
+        transition: .4s ease-in-out;
+        border-radius: 5px 15px 15px 5px;
+      }
+      
+      .book-notebook4:hover {
+        cursor:pointer;
+          transform: rotateZ(-10deg);
+          .notebook-cover4 {
+              transform: rotateY(-50deg);
+              z-index: 999;
+              box-shadow: 20px 10px 50px rgba(0,0,0,0.2);
+              
+          }
+        }
+        
+      .notebook-cover4 {
+        background: #cc4b48;
+        height: 250px;
+        width: 175px;
+        position: absolute;
+        border-radius: 5px 15px 15px 5px;
+        z-index: 10;
+        transition: .5s linear;
+        transform-style: preserve-3d;
+        transform-origin: left center 0px;
+    
+      }
+    
+      .notebook-cover4:before {
+          content: "";
+          position: absolute;
+          width: 10px;
+          height: calc(100% + 2px);
+          z-index: 100;
+          border-radius: 2px;
+          transition: 2s ease;
+        }
+        
+      
+      .notebook-page4 {
+        height: 100%;
+        width: 175px;
+        position: absolute;
+        background-color: #fbfae8;
+        z-index: 0;
+        border-radius: 5px 16px 16px 5px;
+        overflow: hidden;
+      }
+      
+      
+      .squared1 {
+              background-image: linear-gradient(#e4e4e4 1px, transparent 1px), linear-gradient(90deg, #e4e4e4 1px, transparent 1px);
+          background-size: 10px 10px, 10px 10px, 2px 2px, 2px 2px;
+        }
+
+
+
+        .next-project {
+          position:absolute;
+          align-items:center;
+          
+          }
+          
+          .next {
+          display: block; 
+          font-family: "Lato", sans-serif;
+          color: #DCDAC1;
+          font-weight: 600;
+          font-size: 2vw;
+          text-decoration: none;
+          }
+          
+          .next:hover, .view:hover {
+          color:#1E1E1E;
+          background-color:#DCDAC1;
+          }
+          
+          .home:hover {
+          color:#1E1E1E
+          }
+
+    

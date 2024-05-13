@@ -1,0 +1,57 @@
+.header {
+    display:flex;
+    flex-direction: column;
+    text-align:center;
+
+  
+}
+.title {
+  font-family: "Lato", sans-serif;
+  color: #DCDAC1;
+  font-weight: 600;
+  font-size: 5vw;
+  margin-bottom: 15px;
+}
+
+.subtitle {
+  font-family: "Lato", sans-serif;
+  color: #DCDAC1;
+  font-weight: 600;
+  font-size: 3vw;
+}
+
+
+
+.view {
+  font-family: "Lato", sans-serif;
+  color: #DCDAC1;
+  font-weight: 600;
+  font-size: 1vw;
+  text-decoration: none;
+  margin-bottom:9px;
+}
+
+.next-project {
+  display: flex;
+  flex-direction: column;;
+  align-items:center;
+  margin-bottom:98px;
+}
+
+.next {
+  display: block; 
+  font-family: "Lato", sans-serif;
+  color: #DCDAC1;
+  font-weight: 600;
+  font-size: 2vw;
+  text-decoration: none;
+}
+
+.next:hover, .view:hover {
+  color:#1E1E1E;
+  background-color:#DCDAC1;
+  }
+
+.home:hover {
+  color:#1E1E1E
+}

@@ -1,0 +1,142 @@
+html, 
+
+.page {
+    display:flex;
+    flex-direction: column;
+	flex-wrap: nowrap;
+    align-items: center;
+}
+
+.flex-container{
+    display:flex;
+    flex-direction: column;
+	flex-wrap: nowrap;
+    align-items: center;
+}
+
+.flex-container > div {
+  margin: 10px;
+}
+
+.text-stack {
+    display:flex;
+    flex-direction: column;	
+}
+
+.text-stack > div {
+	display:block;
+	text-align: center;
+}
+
+.text-format {
+	color: #DCDAC1;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size:5vw;
+    text-decoration: none;
+    white-space: nowrap;
+	/*position:absolute;*/
+}
+
+.text-format:hover {
+    color:#1E1E1E;
+    /* background-color:#DCDAC1; */
+}
+
+.text-cluster {
+	/*position:relative;*/
+    height:317px;
+    width:1000;
+    align-items: center;
+}
+
+.show { display:block; }
+.noshow { display:none; }
+  
+#music {
+    position:absolute;
+    margin-top:145px;
+    margin-left:347px;    
+}
+
+#ball {
+    position:absolute;
+    margin-top:231px;
+    margin-left:484px;
+
+    
+}
+
+#IFTTT {
+    position:absolute;
+    margin-top:10px;
+    margin-left:167px;
+    
+}
+
+#metronome {
+    position:absolute;
+    margin-top: 18px;
+    margin-left: 343px;
+    
+}
+
+#memoirs {
+    position:absolute;
+    margin-top: 63px;
+    
+}
+
+#cards {
+    position:absolute;
+    margin-top: 142px;
+    margin-left:87px;
+   
+
+}
+
+#still {
+    position:absolute;
+    margin-top:97px;
+    margin-left:258px;
+   
+
+}
+
+#world{ 
+    position:absolute;
+    margin-top:204px;
+    
+}
+
+.unpack {
+    position:relative;
+	padding:100px 0 70px 0;
+    color: #DCDAC1;
+    text-decoration: none;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align:center;
+    font-size:3vw;
+    text-decoration: none;
+}
+
+.unpack-subtitle {
+    color: #DCDAC1;
+    text-decoration: none;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align:center;
+    width:60vw;
+    font-size:2vw;
+    text-decoration: none;
+    position:relative;
+    margin-left:auto;
+    margin-right:auto;
+    padding-top:89px;
+    padding-bottom:178px;
+
+}

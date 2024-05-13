@@ -1,0 +1,46 @@
+<html>
+<head>
+    <link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" href="../global-style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Sora:wght@800&family=Unbounded:wght@200..900&display=swap");
+      @import url("https://api.fontshare.com/v2/css?f[]=clash-display@200,400,700,500,600,1,300&f[]=satoshi@1,900,700,500,301,701,300,501,401,901,400,2&display=swap");
+    </style>
+	<script src="../portfolio.js"></script>
+</head>
+  
+<body style="margin:0;">
+<div class="header">
+  <div class="banner" onclick="backHome();"><img src="../header.png"></div>
+</div>
+
+<div class="main-content">
+  
+	<div id="wrapper">
+		<div id="title" class="clash">MAGIC 8 BALL</div>
+	</div>
+  
+	<button id="playbutton" class="clash button">LET'S PLAY</button>
+  
+	<div id="questionScreen">
+      <div id="questions" class="clash">Will test happen in my life this year?</div>
+    </div>
+    
+    <div id="answerScreen">
+      <div id="ball" class="clash">
+        <div id="answers" class="clash"></div>
+      </div>
+    </div>
+</div>
+
+<div class="next-project">
+  
+	  <button type="button" onclick="goNextProj();" class="nav-button clash">VIEW NEXT PROJECT</button>
+	  <input id="navData" type="hidden" data="music-analyzer:eightBall:selfcare"/>
+
+</div>
+
+ <script src="eight.js"></script>
+
+</body>
+</html> 

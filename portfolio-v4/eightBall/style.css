@@ -1,0 +1,198 @@
+::selection {
+    background-color: white;
+  }
+  
+  html,
+  body {
+    background-color: CA633E;
+  }
+  
+  .main-content{
+	background-color: #22306d;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 80vh;
+    overflow: hidden;
+    position: relative;
+    width: 100vw;
+	margin-bottom:20px;
+  }
+  
+  #questionScreen,
+  #answerScreen {
+    width: 100vw;
+    position: relative;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .clash {
+    font-family: "Clash Display", sans-serif;
+    font-weight: 600;
+  }
+  
+  #wrapper {
+    width: 100vw;
+    position: relative;
+    background-color: #cff469;
+    border-radius: 10vw;
+    margin: 5vw;
+  }
+  
+  #title {
+    width: 90vw;
+    text-align: center;
+    color: #22306d;
+    font-size: calc(80px + 1vw);
+    font-weight: 600;
+    z-index: 0;
+    margin: 2vw auto;
+  }
+  
+  #answers {
+    width: 80%;
+    text-align: center;
+    color: #22306d;
+    font-weight: 600;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 100;
+    transform: translate(-50%, -50%);
+    word-wrap: normal;
+  }
+  
+  @media (max-width: 500px) {
+    #answers {
+      font-size: 8vw;
+    }
+  }
+  
+  @media (min-width: 501px) and (max-width: 800px) {
+    #answers {
+      font-size: 6vw;
+    }
+  }
+  
+  @media (min-width: 801px) {
+    #answers {
+      font-size: 4vw;
+    }
+  }
+  
+  #playbutton {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    justify-content: center;
+    align-items: center;
+    border-radius: 20vw; /* Adjust the value to control the roundness of the button */
+    overflow: hidden;
+    z-index: 1000;
+    border: 2px solid #cff469;
+    background-color: white;
+    color: #22306d;
+    padding: 3vh 5vw; /* Adjust the padding using viewport units */
+    font-size: 3vh; /* Adjust the font size using viewport units */
+    cursor: pointer;
+  }
+  
+  .button {
+    flex: 1;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  
+  .button:active {
+    background-color: #cff469;
+  }
+  
+  #questions {
+    width: 80vw;
+    text-align: center;
+    color: white;
+    font-size: calc(5vw);
+    font-weight: 600;
+    position: relative;
+    margin-left: 10vw;
+  }
+  
+  #findoutbutton {
+    position: absolute;
+    bottom: -120px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20vw;
+    overflow: hidden;
+    z-index: 1000;
+    border: 2px solid #cff469;
+  }
+  
+  #ball {
+    width: 50vw;
+    height: 50vw;
+    margin-left: 10vw;
+    border-radius: 50%;
+    background-color: #CFF469;
+    border: 2px solid white;
+    position: absolute;
+    transform: translate(-150%, -50%);
+  }
+  form {
+    display: inline-block;
+  }
+  
+  #questionInput {
+    background-color: transparent;
+    border: 0px;
+    display: inline-block;
+    border-bottom: 2px white solid;
+    color: white;
+    font-size: calc(5vw);
+    font-weight: 300;
+    font-family: "Clash Display", sans-serif;
+    margin-bottom:-4vw;
+  }
+  
+  #questionInput::placeholder {
+    color: #4d5da5;
+  }
+  
+  
+  .slide-out {
+    transform: translateX(-100vw);
+    transition: transform 0.5s ease;
+  }
+  
+  .slide-in {
+    opacity: 1;
+    transform: translateX(-100vw);
+    transition: transform 0.5s ease;
+  }
+  
+  @keyframes shake {
+    0% { transform: translateX(-50vw) translateY(0); }
+    10% { transform: translateX(-60vw) translateY(-20vw); }
+    20% { transform: translateX(-70vw) translateY(-10vw); }
+    30% { transform: translateX(-80vw) translateY(-15vw); }
+    40% { transform: translateX(-70vw) translateY(-15vw); }
+    50% { transform: translateX(-90vw) translateY(-20vw); }
+    60% { transform: translateX(-75vw) translateY(-20vw); }
+    70% { transform: translateX(-75vw) translateY(-10vw); }
+    80% { transform: translateX(-100vw) translateY(-15vw); }
+    90% { transform: translateX(-80vw) translateY(-20vw); }
+    100% { transform: translateX(-70vw) translateY(0); }
+  }
+  
+  .shake {
+    animation: shake 1s ease-in-out;
+  }
+  

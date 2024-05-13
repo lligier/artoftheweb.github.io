@@ -1,0 +1,48 @@
+<html>
+<head>
+    <link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" href="global-style.css" />
+	<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Manrope:wght@200..800&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="portfolio.js"></script>
+	
+</head>
+
+<body style="background-color:#CA633E;width:95%;">
+
+<div class="flex-container">
+	<div class="banner" onclick="backHome(true);" style="margin-bottom: 30px;"><img src="header.png"></div>
+	<div class="unpack" style="padding:0;">
+		<button type="button" onclick="unpackCode();" class="nav-button clash">UNPACK MY CODE</button>
+	</div>
+	<!-- project clean state -->
+	<div id="listContent" class="noshow text-stack">
+		<div><a href='#' class='text-format' data="home:music-analyzer:eightBall" onclick='openProj(this);'>THE ART OF MUSIC</a></div>
+		<div><a href='#' class='text-format' data="music-analyzer:eightBall:selfcare" onclick='openProj(this);'>YOUR FUTURE</a></div>
+		<div><a href='#' class='text-format' data="eightBall:selfcare:memoirs" onclick='openProj(this);'>IFTTT</a></div>
+		<div><a href='#' class='text-format' data="selfcare:metronome:memoirs" onclick='openProj(this);'>SOUND THE ALARM</a></div>
+		<div><a href='#' class='text-format' data="metronome:memoirs:Cards" onclick='openProj(this);'>READ BEFORE YOU DIE</a></div>
+		<div><a href='#' class='text-format' data="memoirs:Cards:css-still-life" onclick='openProj(this);'>WHO AM I?</a></div>
+		<div><a href='#' class='text-format' data="Cards:css-still-life:codingWorld" onclick='openProj(this);'>A THOUSAND WORDS</a></div>
+		<div><a href='#' class='text-format' data="css-still-life:codingWorld:home" onclick='openProj(this);'>AN OUTSIDER TO CODE</a></div>
+	</div>
+	<!-- projects messy state -->
+    <div id="messyContent" class="show text-cluster">
+        <div><a href='music-analyzer/index.html' class='text-format' id="music">THE ART OF MUSIC</a></div>
+        <div><a href='eightBall/index.html' class='text-format' id="ball">YOUR FUTURE</a></div>
+        <div><a href='selfcare/index.html' class='text-format'id="IFTTT">IFTTT</a></div>
+        <div><a href='metronome/index.html' class='text-format'id="metronome">SOUND THE ALARM</a></div>
+        <div><a href='memoirs/index copy.html' class='text-format' id="memoirs">READ BEFORE YOU DIE</a></div>
+        <div><a href='Cards/index.html' class='text-format' id="cards">WHO AM I?</a></div>
+        <div><a href='css-still-life/index.html' class='text-format' id="still">A THOUSAND WORDS</a></div>
+        <div><a href='codingWorld/index.html' class='text-format' id="world">AN OUTSIDER TO CODE</a></div>
+    </div>
+
+    <div class="unpack-subtitle">CLICK “UNPACK MY CODE” TO SEE A VISUAL REPRESENTATION OF HOW CODING WENT FROM CONFUSING TO SIMPLIFIED BECAUSE OF
+		<a href='discussion_page/discussion.html' class="art">MY CLASS: ART OF THE WEB</a></div>
+</div>
+
+</body>
+
+</html>

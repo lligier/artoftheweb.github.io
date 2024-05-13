@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css" /> 
+	<link rel="stylesheet" href="../global-style.css" />
+	<link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
+	
+	<script src="../portfolio.js"></script>
+</head>
+
+<body>
+
+<div class="header" style="margin:0;">
+    <div class="banner" onclick="backHome();"><img src="../header.png"></div>
+    <div class="title" style="color:black;">WHO AM I?</div>
+</div>
+
+<div style="text-align:center;"> 
+	<iframe src="who_am_i.html" style="width:100%;height:650px;overflow: scroll;"></iframe>
+</div>
+
+<div class="next-project" style="width: 100%;margin-top:50px;">
+    <button type="button" onclick="goNextProj();" class="nav-button clash">VIEW NEXT PROJECT</button>
+    <!-- <button type="button" onclick="goNextProj();" class="nav-button clash">BACK TO HOME PAGE</button> -->
+    <input id="navData" type="hidden" data="memoirs:Cards:css-still-life"/>
+</div>
+
+</body>
+</html>

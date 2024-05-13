@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- FONT -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+	<link rel="stylesheet" href="../global-style.css" />
+
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+	
+    <!-- Javascript -->
+	<script src="util.js"></script>
+	<script src="../portfolio.js"></script>
+    
+</head>
+
+<body style="margin:0;padding:0">
+
+<div class="header" style="margin:0;">
+    <div class="banner" onclick="backHome();"><img src="../header.png"></div>
+    <div class="title">READ BEFORE YOU DIE</div>
+</div>
+    
+<div style="border:1px solid white;">
+    <!-- TITLE -->
+    <div class="typewriter">
+        <h1>top 5 memoirs.</h1>
+      </div>
+    
+      <!-- WRAPPER FOR ALL BOOKS -->
+
+    <div class="main-content">
+       
+        <!-- BOOK #1 -->
+        <!-- Click on Book 1 / Call the function "selectbook" -->
+        <div id="book-1" class="book-wrapper" onclick="selectBook(this);">
+            <div id="book-1-notebook" alt="Book cover for The Girl with Seven Names 
+            Escape from North Korea by Hyeonseo Lee, click to open a summary" class="book-notebook">
+                <div class="notebook-cover">
+                    <img src="TheGirl.jpeg" class="imagestyle"/>
+                    <div class="notebook-skin"></div>
+                </div>
+                <div class="notebook-page">
+                    <div class="ruled">
+                        <div class="squared">
+                            <div class="doted"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		</div>
+
+        <!-- BOOK #2 -->
+        <div id="book-2" class="book-wrapper book-wrapper1" onclick="selectBook(this);">
+            <div id="book-2-notebook" class="book-notebook1">
+                <div class="notebook-cover1">
+                    <img src="Maid.jpeg" alt="Book cover for Maid, Hard Work, Low Pay and a mother's will to survive, click to open a summary" 
+                    class="imagestyle"/>
+                </div>
+                <div class="notebook-page">
+                    <div class="ruled">
+                        <div class="squared">
+                            <div class="doted"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		</div>
+
+        <!-- BOOK #3 -->
+        <div id="book-3" class="book-wrapper book-wrapper2" onclick="selectBook(this);">
+            <div id="book-3-notebook" class="book-notebook2">
+                <div class="notebook-cover2">
+                    <img src="Mom.jpeg" alt="Book cover for I'm Glad My Mom Died by Jennete McCurdy to open a summary" class="imagestyle"/>
+                </div>
+                <div class="notebook-page2">
+                    <div class="ruled">
+                        <div class="squared">
+                            <div class="doted"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		</div>
+
+        <!-- BOOK #4 -->
+        <div id="book-4" class="book-wrapper book-wrapper3" onclick="selectBook(this);">
+            <div id="book-4-notebook" class="book-notebook3">
+                <div class="notebook-cover3">
+                    <img src="trevor.jpeg"alt="Book cover for Trevor Noah's Born a Crime, click to open a summary"  class="imagestyle"/>
+                </div>
+                <div class="notebook-page3">
+                    <div class="ruled">
+                        <div class="squared">
+                            <div class="doted"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		</div>
+
+        <!-- BOOK #5 -->
+        <div id="book-5" class="book-wrapper book-wrapper4" onclick="selectBook(this);">
+            <div id="book-5-notebook" class="book-notebook4">
+                <div class="notebook-cover4">
+                    <img src="KnowName.jpg" alt="Book cover for Know My Name by Chanel Miller" class="imagestyle"/>
+                </div>
+                <div class="notebook-page4">
+                    <div class="ruled">
+                        <div class="squared">
+                            <div class="doted"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		</div>
+
+    </div>
+	
+	<div class="note-content">
+        <div id="note-1-summary" class="note-summary hidden">
+			<p><strong>The Girl with Seven Names by Hyeonseo Lee </strong>| Changes your perspective on life</br></br>  A gripping memoir that 
+                recounts the harrowing journey of a North Korean defector, Hyeonseo, escaping her oppressive homeland, adopting multiple identities, 
+                and ultimately finding freedom against all odds. This emotional odyssey serves as a deep look into a country rarely documented, making 
+                us realize the striking similarities we share as humans despite vastly different circumstances. 
+                 </p>
+        </div>	
+		<div id="note-2-summary" class="note-summary hidden">
+			<p><strong>Maid by Stephanie Land</strong> | Deeply human </br></br>  a compelling memoir that unveils the challenges faced by author Stephanie
+                 Land as a single mother working as a maid. Through poignant storytelling, Land shares the struggles of balancing low-paying jobs, 
+                 navigating the welfare system, and striving for a better life for her daughter.  </p>
+        </div>
+		<div id="note-3-summary" class="note-summary hidden">
+            <p><strong>I'm Glad My Mom Died by Jeanette McCurdy</strong> | Cried 4 times reading this</br></br>   explores the intricacies of childhood acting,
+                 delving into parental pressure, reflecting on mental health, and unraveling the complexities of friendships, particularly within the context of 
+                 the toxic nature of "iCarly."    </p>
+        </div>
+		<div id="note-4-summary" class="note-summary hidden">
+            <p><strong>Born a Crime by Trevor Noah</strong> | Laugh, cry, an emotional rollercoaster</br></br>  a captivating memoir that navigates his unconventional 
+                upbringing in apartheid-era South Africa, offering a poignant blend of humor, insight, and resilience.  </p>
+        </div>
+		<div id="note-5-summary" class="note-summary hidden">
+            <p><strong>Know My Name by Chanel Miller</strong> | I was angry the entire time</br></br>  a powerful memoir that unveils the identity and resilience of the author,
+                 previously known as Emily Doe in the Brock Turner sexual assault case. Miller's narrative reflects on trauma, healing, and the pursuit of justice, offering a 
+                 compelling perspective on the complexities of survivorship and the strength found in reclaiming one's name and story.
+	    </div>
+    </div>
+
+    <div class="buttons-content">
+		<input id="moveTop" class="hidden" type="button" value="Go to Top" onclick="moveToTop();"></input>
+	</div>
+</div>
+
+<div class="next-project" style="width: 100%;margin-top:50px;">
+  
+    <button type="button" onclick="goNextProj();" class="nav-button clash">VIEW NEXT PROJECT</button>
+    <!-- <button type="button" onclick="goNextProj();" class="nav-button clash">BACK TO HOME PAGE</button> -->
+    <input id="navData" type="hidden" data="metronome:memoirs:Cards"/>
+</div>
+   
+</body>
+</html>
